@@ -1,1 +1,0 @@
-.whim/local/jeff.gvimrc
