@@ -16,7 +16,6 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'nelstrom/vim-markdown-preview'
 Bundle 'git://github.com/gregsexton/MatchTag.git'
-Bundle 'ervandew/supertab.git'
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
