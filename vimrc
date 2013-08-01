@@ -6,7 +6,8 @@ filetype off  " required!
 
 let g:gist_open_browser_after_post = 1
 
-set rtp+=~/.vim/vundle.git/ 
+set tw=79
+set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 " My Bundles here:
@@ -29,13 +30,32 @@ Bundle 'css_color.vim'
 "create that cool red line Brendan uses"
 :set colorcolumn=80
 
-filetype plugin indent on     " required!
+" Show trailing whitespace:
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+:match ExtraWhitespace /\s\+$/
+
+" this will autocomplete maybe:
+set wildmenu
+
+filetype plugin indent on
+
 " this is my home!!!
-cd ~/
+cd ~/wistia/
+
+" do some crazy shit with splits
+set splitright
+set splitbelow
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
 
 " Lets try to get lines wrapped on spaces"
 set linebreak
 
-" turn automake on for the current buffer
-command CoffeeAutoMakeOn let b:coffeeAutoMake = 1
-command CoffeeAutoMakeOff let b:coffeeAutoMake = 0
+" Enable acp by default
+au VimEnter * AutoComplPopEnable
+
+" For all text or markdown files turn on spell check
+autocmd FileType markdown setlocal spell
+autocmd FileType text setlocal spell
