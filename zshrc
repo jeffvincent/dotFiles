@@ -38,6 +38,7 @@ alias cdw='cd ~/wistia/wistia' # alias cd'ing into wistia/wistia
 alias cdwc='cd ~/wistia/wistiacom' # alias cd'ing into wistia/wistiacom
 alias todo='mvim ~/projects/todo/to-do.md' # alias opening text-based todo list
 alias moreau='mvim -p ~/wistia/moreau_doctrine/*' # alias opening all of the moreau doctrine in MacVim tabs
+alias coffeecompile='coffee -wcb **/*.coffee' # alias for some crazy coffee compilation script
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,5 +51,6 @@ export PATH=/Applications:$PATH
 export PATH=/usr/local/Cellar/macvim/7.3-57/bin/:$PATH
 export PATH=/Users/jeff/node_modules/coffee-script/bin:$PATH
 export SSL_CERT_FILE=/usr/local/etc/openssl/cacert.pem
+export PATH=/usr/local/share/npm/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
